@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEC Companion", "TEC Companion\TEC Companion.csproj", "{CE884520-1298-4029-8219-A497A5EECE5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE884520-1298-4029-8219-A497A5EECE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE884520-1298-4029-8219-A497A5EECE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE884520-1298-4029-8219-A497A5EECE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE884520-1298-4029-8219-A497A5EECE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E4242DE-0B9A-4665-BB6D-D20B4ECFCCA9}
+	EndGlobalSection
+EndGlobal

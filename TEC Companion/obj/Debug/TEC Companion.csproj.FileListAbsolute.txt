@@ -1,0 +1,10 @@
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\bin\Debug\TEC Companion.exe.config
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\bin\Debug\TEC Companion.exe
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\bin\Debug\TEC Companion.pdb
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\obj\Debug\TEC Companion.csprojAssemblyReference.cache
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\obj\Debug\TEC_Companion.Form1.resources
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\obj\Debug\TEC_Companion.Properties.Resources.resources
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\obj\Debug\TEC Companion.csproj.GenerateResource.cache
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\obj\Debug\TEC Companion.csproj.CoreCompileInputs.cache
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\obj\Debug\TEC Companion.exe
+C:\Users\kpere\source\repos\TEC Companion\TEC Companion\obj\Debug\TEC Companion.pdb
