@@ -39,5 +39,10 @@ namespace TEC_Companion
 				ComboBox_COMPorts.Items.Add(port);
 			}
 		}
+
+		private void ComboBox_COMPorts_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			arduinoController.SelectCOMPort(ComboBox_COMPorts.SelectedItem.ToString());
+		}
 	}
 }

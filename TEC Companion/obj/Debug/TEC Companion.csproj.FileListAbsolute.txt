@@ -20,3 +20,16 @@ C:\Users\KevinP\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC Compan
 C:\Users\KevinP\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC Companion.pdb
 C:\Users\KevinP\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC_Companion.Form_MainDisplay.resources
 C:\Users\KevinP\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC_Companion.Form_Options.resources
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\bin\Debug\TEC Companion.exe.config
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\bin\Debug\TEC Companion.exe
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\bin\Debug\TEC Companion.pdb
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\bin\Debug\AGauge.dll
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC Companion.csprojAssemblyReference.cache
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC_Companion.Form_MainDisplay.resources
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC_Companion.Form_Options.resources
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC_Companion.Properties.Resources.resources
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC Companion.csproj.GenerateResource.cache
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC Companion.csproj.CoreCompileInputs.cache
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC Companion.csproj.CopyComplete
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC Companion.exe
+C:\Users\kpere\Documents\GitHub\TECCompanion\TEC Companion\obj\Debug\TEC Companion.pdb

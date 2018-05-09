@@ -34,11 +34,20 @@ namespace TEC_Companion
 			return COMPorts;
 		}
 
+		public void sendData(string s)
+		{
+			if(arduinoPort == null)
+			{
+				MessageBox.Show("Please select COM port first!");
+				return;
+			}
+			arduinoPort.Write(s);
+		}
+
 		//On Data Received
 		private void dataReceived(object o, SerialDataReceivedEventArgs e)
 		{
 			buffer += arduinoPort.ReadExisting();
-
 
 			if (buffer.Contains("\n"))
 			{
@@ -46,12 +55,13 @@ namespace TEC_Companion
 
 				buffer = "";
 
-				if (received.Length != 3)
+				if (received.Length != 4)
 					return;
 
-				float ambientTemp = -50.00f;
-				float humidity;
-				float dewPoint;
+				float ambientTemp	= -50.00f;
+				float humidity		= -50.00f;
+				float dewPoint		= -50.00f;
+				float peltierState	= 0.00f;
 
 				try
 				{
@@ -61,8 +71,35 @@ namespace TEC_Companion
 					MessageBox.Show("Failed to convert ambient temp to float - " + ex.ToString());
 				}
 
+				try
+				{
+					humidity = float.Parse(received[1]);
+				} catch(Exception ex)
+				{
+					MessageBox.Show("Failed to convert humidity to float - " + ex.ToString());
+				}
+
+
+				try
+				{
+					dewPoint = float.Parse(received[2]);
+				} catch(Exception ex)
+				{
+					MessageBox.Show("Failed to convert dew point to float - " + ex.ToString());
+				}
+
+				try
+				{
+					peltierState = float.Parse(received[3]);
+				} catch(Exception ex)
+				{
+					MessageBox.Show("Failed to get peltier state - " + ex.ToString());
+				}
+
 				mainForm.PerformSafely(() => mainForm.setAmbientGaugeTemp(ambientTemp));
-				
+				mainForm.PerformSafely(() => mainForm.setDewPointLabel(dewPoint));
+				mainForm.PerformSafely(() => mainForm.setHumidityLabel(humidity));
+				mainForm.PerformSafely(() => mainForm.setPeltierStateLabel(peltierState));
 
 			}
 		}

@@ -31,19 +31,19 @@
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.File_Menu = new System.Windows.Forms.ToolStripMenuItem();
 			this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.aGauge2 = new AGaugeApp.AGauge();
-			this.Gauge_AmbientTemp = new AGaugeApp.AGauge();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
+			this.Label_TECState = new System.Windows.Forms.Label();
+			this.Label_Humidity = new System.Windows.Forms.Label();
+			this.Label_DewPoint = new System.Windows.Forms.Label();
+			this.Button_TECOn = new System.Windows.Forms.Button();
+			this.Button_TECOff = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.aGauge2 = new AGaugeApp.AGauge();
+			this.Gauge_AmbientTemp = new AGaugeApp.AGauge();
 			this.menuStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
@@ -69,9 +69,117 @@
 			// optionsToolStripMenuItem
 			// 
 			this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-			this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
 			this.optionsToolStripMenuItem.Text = "Options";
 			this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(53, 230);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(108, 13);
+			this.label1.TabIndex = 14;
+			this.label1.Text = "Ambient Temperature";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(289, 230);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(106, 13);
+			this.label2.TabIndex = 15;
+			this.label2.Text = "Coolant Temperature";
+			// 
+			// panel1
+			// 
+			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel1.Controls.Add(this.Label_TECState);
+			this.panel1.Controls.Add(this.Label_Humidity);
+			this.panel1.Controls.Add(this.Label_DewPoint);
+			this.panel1.Controls.Add(this.Button_TECOn);
+			this.panel1.Controls.Add(this.Button_TECOff);
+			this.panel1.Controls.Add(this.label5);
+			this.panel1.Controls.Add(this.label4);
+			this.panel1.Controls.Add(this.label3);
+			this.panel1.Location = new System.Drawing.Point(12, 246);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(447, 67);
+			this.panel1.TabIndex = 16;
+			// 
+			// Label_TECState
+			// 
+			this.Label_TECState.AutoSize = true;
+			this.Label_TECState.Location = new System.Drawing.Point(329, 10);
+			this.Label_TECState.Name = "Label_TECState";
+			this.Label_TECState.Size = new System.Drawing.Size(27, 13);
+			this.Label_TECState.TabIndex = 24;
+			this.Label_TECState.Text = "OFF";
+			// 
+			// Label_Humidity
+			// 
+			this.Label_Humidity.AutoSize = true;
+			this.Label_Humidity.Location = new System.Drawing.Point(95, 40);
+			this.Label_Humidity.Name = "Label_Humidity";
+			this.Label_Humidity.Size = new System.Drawing.Size(30, 13);
+			this.Label_Humidity.TabIndex = 23;
+			this.Label_Humidity.Text = "00 %";
+			// 
+			// Label_DewPoint
+			// 
+			this.Label_DewPoint.AutoSize = true;
+			this.Label_DewPoint.Location = new System.Drawing.Point(95, 10);
+			this.Label_DewPoint.Name = "Label_DewPoint";
+			this.Label_DewPoint.Size = new System.Drawing.Size(33, 13);
+			this.Label_DewPoint.TabIndex = 22;
+			this.Label_DewPoint.Text = "00 *C";
+			// 
+			// Button_TECOn
+			// 
+			this.Button_TECOn.Location = new System.Drawing.Point(332, 35);
+			this.Button_TECOn.Name = "Button_TECOn";
+			this.Button_TECOn.Size = new System.Drawing.Size(102, 23);
+			this.Button_TECOn.TabIndex = 21;
+			this.Button_TECOn.Text = "TURN TEC ON";
+			this.Button_TECOn.UseVisualStyleBackColor = true;
+			this.Button_TECOn.Click += new System.EventHandler(this.Button_TECOn_Click);
+			// 
+			// Button_TECOff
+			// 
+			this.Button_TECOff.Location = new System.Drawing.Point(224, 35);
+			this.Button_TECOff.Name = "Button_TECOff";
+			this.Button_TECOff.Size = new System.Drawing.Size(102, 23);
+			this.Button_TECOff.TabIndex = 20;
+			this.Button_TECOff.Text = "TURN TEC OFF";
+			this.Button_TECOff.UseVisualStyleBackColor = true;
+			this.Button_TECOff.Click += new System.EventHandler(this.Button_TECOff_Click);
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(231, 10);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(59, 13);
+			this.label5.TabIndex = 19;
+			this.label5.Text = "TEC State:";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(3, 40);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(50, 13);
+			this.label4.TabIndex = 18;
+			this.label4.Text = "Humidity:";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(3, 10);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(59, 13);
+			this.label3.TabIndex = 17;
+			this.label3.Text = "Dew Point:";
 			// 
 			// aGauge2
 			// 
@@ -283,113 +391,7 @@
 			this.Gauge_AmbientTemp.Size = new System.Drawing.Size(211, 186);
 			this.Gauge_AmbientTemp.TabIndex = 11;
 			this.Gauge_AmbientTemp.Text = "Temperature";
-			this.Gauge_AmbientTemp.Value = 0F;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(53, 230);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(108, 13);
-			this.label1.TabIndex = 14;
-			this.label1.Text = "Ambient Temperature";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(289, 230);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(106, 13);
-			this.label2.TabIndex = 15;
-			this.label2.Text = "Coolant Temperature";
-			// 
-			// panel1
-			// 
-			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel1.Controls.Add(this.label8);
-			this.panel1.Controls.Add(this.label7);
-			this.panel1.Controls.Add(this.label6);
-			this.panel1.Controls.Add(this.button2);
-			this.panel1.Controls.Add(this.button1);
-			this.panel1.Controls.Add(this.label5);
-			this.panel1.Controls.Add(this.label4);
-			this.panel1.Controls.Add(this.label3);
-			this.panel1.Location = new System.Drawing.Point(12, 246);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(447, 67);
-			this.panel1.TabIndex = 16;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(3, 10);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(59, 13);
-			this.label3.TabIndex = 17;
-			this.label3.Text = "Dew Point:";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(3, 40);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(50, 13);
-			this.label4.TabIndex = 18;
-			this.label4.Text = "Humidity:";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(231, 10);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(59, 13);
-			this.label5.TabIndex = 19;
-			this.label5.Text = "TEC State:";
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(224, 35);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(102, 23);
-			this.button1.TabIndex = 20;
-			this.button1.Text = "TURN TEC OFF";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(332, 35);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(102, 23);
-			this.button2.TabIndex = 21;
-			this.button2.Text = "TURN TEC ON";
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(95, 10);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(33, 13);
-			this.label6.TabIndex = 22;
-			this.label6.Text = "00 *C";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(95, 40);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(30, 13);
-			this.label7.TabIndex = 23;
-			this.label7.Text = "00 %";
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(329, 10);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(27, 13);
-			this.label8.TabIndex = 24;
-			this.label8.Text = "OFF";
+			this.Gauge_AmbientTemp.Value = 10F;
 			// 
 			// Form_MainDisplay
 			// 
@@ -428,11 +430,11 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Button Button_TECOff;
+		private System.Windows.Forms.Button Button_TECOn;
+		private System.Windows.Forms.Label Label_DewPoint;
+		private System.Windows.Forms.Label Label_Humidity;
+		private System.Windows.Forms.Label Label_TECState;
 	}
 }
 

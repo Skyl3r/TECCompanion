@@ -52,6 +52,7 @@
 			this.ComboBox_COMPorts.Name = "ComboBox_COMPorts";
 			this.ComboBox_COMPorts.Size = new System.Drawing.Size(103, 21);
 			this.ComboBox_COMPorts.TabIndex = 1;
+			this.ComboBox_COMPorts.SelectedIndexChanged += new System.EventHandler(this.ComboBox_COMPorts_SelectedIndexChanged);
 			// 
 			// label1
 			// 
